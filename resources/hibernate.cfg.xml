@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/development</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">1111qwer</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping resource="FormEntity.hbm.xml"/>
+        <mapping class="Career.FormEntity"/>
+        <mapping class="Career.PassportEntity"/>
+        <mapping resource="PassportEntity.hbm.xml"/>
+        <mapping resource="PostEntity.hbm.xml"/>
+        <mapping class="Career.PostEntity"/>
+        <mapping resource="StatusEntity.hbm.xml"/>
+        <mapping class="Career.StatusEntity"/>
+        <mapping resource="WorkEntity.hbm.xml"/>
+        <mapping class="Career.WorkEntity"/>
+
+
+        <!-- DB schema will be updated if needed -->
+
+    </session-factory>
+</hibernate-configuration>

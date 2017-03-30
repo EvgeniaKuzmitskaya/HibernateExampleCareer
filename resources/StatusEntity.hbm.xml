@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Career.StatusEntity" table="status" schema="development">
+        <id name="idStatus">
+            <column name="id_status" sql-type="int(11)"/>
+        </id>
+        <property name="aducationStatus">
+            <column name="aducation_status" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="familyStatus">
+            <column name="family_status" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="childrenStatus">
+            <column name="children_status" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>

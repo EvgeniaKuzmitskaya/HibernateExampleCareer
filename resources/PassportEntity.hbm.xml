@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Career.PassportEntity" table="passport" schema="development">
+        <id name="idPassport">
+            <column name="id_passport" sql-type="int(11)"/>
+        </id>
+        <property name="dateOfBirthPassport">
+            <column name="dateOfBirth_passport" sql-type="date"/>
+        </property>
+        <property name="seriesPassport">
+            <column name="series_passport" sql-type="varchar(15)" length="15"/>
+        </property>
+        <property name="numderPassport">
+            <column name="numder_passport" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="insuarancePassport">
+            <column name="insuarance_passport" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="placeOfBirthPassport">
+            <column name="placeOfBirth_passport" sql-type="varchar(20)" length="20"/>
+        </property>
+    </class>
+</hibernate-mapping>
